@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linear Algebra Done Right Chapter 2: Finite-Dimensional Vector Spaces — Anki Flashcards (36 cards)</title><meta name="description" content="36 Anki flashcards for Chapter 2 (Finite-Dimensional Vector Spaces) of Linear Algebra Done Right, 4th edition: span, linear independence, linear dependence lemma, basis, dimension. Independent study companion; sample cards inside.">
+<link rel="canonical" href="https://hsa00000.github.io/ladr-anki/chapters/finite-dimensional-vector-spaces.html">
+<meta property="og:title" content="Linear Algebra Done Right Chapter 2: Finite-Dimensional Vector Spaces — Anki Flashcards (36 cards)"><meta property="og:description" content="36 Anki flashcards for Chapter 2 (Finite-Dimensional Vector Spaces) of Linear Algebra Done Right, 4th edition: span, linear independence, linear dependence lemma, basis, dimension. Independent study companion; sample cards inside."><meta property="og:type" content="website"><meta property="og:url" content="https://hsa00000.github.io/ladr-anki/chapters/finite-dimensional-vector-spaces.html">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+ onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header><a class="brand" href="../index.html">Anki 4 Math</a><nav><a href="../index.html#chapters">Chapters</a><a href="../index.html#faq">FAQ</a><a class="btn small" href="https://horizon0531.gumroad.com/l/vpxpkf/EARLYBIRD?utm_source=github-pages&utm_medium=landing&utm_campaign=site&utm_content=ch02">Get the full deck</a></nav></header><main><p class="price"><a href="../index.html">All chapters</a> / Chapter 2</p>
+<h1>Chapter 2: Finite-Dimensional Vector Spaces — 36 flashcards</h1>
+<p class="lead">Chapter 2 builds the vocabulary of span, linear independence, bases, and dimension, and proves that dimension is well defined. Nearly every argument in later chapters cites one of these results by name.</p>
+<table><tr><th>Cards in this chapter</th><td class="n">36</td></tr><tr><th>Definitions</th><td class="n">15</td></tr><tr><th>Theorems and results</th><td class="n">21</td></tr></table>
+<p><strong>Topics:</strong> span, linear independence, linear dependence lemma, basis, dimension.</p>
+<h2>Why review this chapter with flashcards</h2><p>Students often know what a basis is but cannot state the dependence lemma or the dimension-of-a-sum formula with the correct hypotheses. These cards target exactly that gap.</p>
+<h2>Three cards from this chapter</h2><p>Read the prompt, try to state the full answer with its hypotheses, then click to check.</p>
+<details class="card"><summary><span class="q"><strong>Theorem.</strong> Linear dependence lemma.<br></span><span class="hint">Try to state it, then click to flip</span></summary>
+<div class="back"><strong>Theorem.</strong> Let<ul>
+<li>$V$ be a vector space over $\mathbb F$.</li>
+<li>$v_1,\ldots,v_m$ be a linearly dependent list in $V$.</li>
+</ul>
+
+Then there exists $k\in\{1,\ldots,m\}$ such that$$
+v_k\in\operatorname{span}(v_1,\ldots,v_{k-1}).
+$$
+Furthermore, if $k$ satisfies this condition, then$$
+\operatorname{span}(v_1,\ldots,v_{k-1},v_{k+1},\ldots,v_m)=\operatorname{span}(v_1,\ldots,v_m).
+$$<div class="extra"><span class="lbl">Note</span>For $k=1$, the condition says $v_1=0$, since $\operatorname{span}()=\{0\}$.<br></div></div></details>
+<details class="card"><summary><span class="q"><strong>Definition.</strong> Basis.<br></span><span class="hint">Try to state it, then click to flip</span></summary>
+<div class="back"><strong>Definition.</strong> Let<ul>
+<li>$V$ be a vector space over $\mathbb F$.</li>
+</ul>
+
+A <strong>basis of $V$</strong> is a list of vectors in $V$ that is linearly independent and spans $V$.<br></div></details>
+<details class="card"><summary><span class="q"><strong>Theorem.</strong> Dimension of a sum.<br></span><span class="hint">Try to state it, then click to flip</span></summary>
+<div class="back"><strong>Theorem.</strong> Let<ul>
+<li>$V$ be a finite-dimensional vector space over $\mathbb F$.</li>
+<li>$V_1,V_2$ be subspaces of $V$.</li>
+</ul>
+
+Then$$
+\dim(V_1+V_2)=\dim V_1+\dim V_2-\dim(V_1\cap V_2).
+$$<div class="extra"><span class="lbl">Note</span>In particular, if $V_1\cap V_2=\{0\}$, then $\dim(V_1\oplus V_2)=\dim V_1+\dim V_2$.<br></div></div></details>
+<p class="free">This chapter is included in the <strong>free AnkiWeb sample</strong> (chapters 1–2, 75 cards). <a href="https://ankiweb.net/shared/info/1172015345">Download the sample from AnkiWeb</a>.</p>
+<p><a class="btn" href="https://horizon0531.gumroad.com/l/vpxpkf/EARLYBIRD?utm_source=github-pages&utm_medium=landing&utm_campaign=site&utm_content=ch02">Get all 572 cards — US$12</a><a class="btn alt" href="https://ankiweb.net/shared/info/1172015345">Free sample (Ch. 1–2)</a></p>
+<div class="chapnav"><a href="vector-spaces.html">&larr; Chapter 1</a><a href="linear-maps.html">Chapter 3 &rarr;</a></div></main><footer><p><strong>Not affiliated with or endorsed by Sheldon Axler or Springer.</strong> This is an independently written flashcard deck that follows the chapter order of <em>Linear Algebra Done Right</em>, 4th edition. It is meant to be used alongside the book, which is available free and legally from <a href="https://linear.axler.net/">the author's website</a>. All text on this site and on the cards is original.</p>
+<p>&copy; 2026 Anki 4 Math. Anki is a free, open-source flashcard program; this site is not affiliated with Anki or AnkiWeb.</p></footer></body></html>

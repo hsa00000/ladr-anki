@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linear Algebra Done Right Chapter 7: Operators on Inner Product Spaces — Anki Flashcards (85 cards)</title><meta name="description" content="85 Anki flashcards for Chapter 7 (Operators on Inner Product Spaces) of Linear Algebra Done Right, 4th edition: adjoint, self-adjoint, normal operators, spectral theorem, positive operators, isometries, unitary operators, singular value decomposition (SVD), polar decomposition. Independent study companion; sample cards inside.">
+<link rel="canonical" href="https://hsa00000.github.io/ladr-anki/chapters/operators-on-inner-product-spaces.html">
+<meta property="og:title" content="Linear Algebra Done Right Chapter 7: Operators on Inner Product Spaces — Anki Flashcards (85 cards)"><meta property="og:description" content="85 Anki flashcards for Chapter 7 (Operators on Inner Product Spaces) of Linear Algebra Done Right, 4th edition: adjoint, self-adjoint, normal operators, spectral theorem, positive operators, isometries, unitary operators, singular value decomposition (SVD), polar decomposition. Independent study companion; sample cards inside."><meta property="og:type" content="website"><meta property="og:url" content="https://hsa00000.github.io/ladr-anki/chapters/operators-on-inner-product-spaces.html">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+ onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header><a class="brand" href="../index.html">Anki 4 Math</a><nav><a href="../index.html#chapters">Chapters</a><a href="../index.html#faq">FAQ</a><a class="btn small" href="https://horizon0531.gumroad.com/l/vpxpkf/EARLYBIRD?utm_source=github-pages&utm_medium=landing&utm_campaign=site&utm_content=ch07">Get the full deck</a></nav></header><main><p class="price"><a href="../index.html">All chapters</a> / Chapter 7</p>
+<h1>Chapter 7: Operators on Inner Product Spaces — 85 flashcards</h1>
+<p class="lead">Chapter 7 is about operators on inner product spaces: adjoints, self-adjoint and normal operators, the real and complex spectral theorems, positive operators, isometries and unitary operators, the singular value decomposition, and polar decomposition.</p>
+<table><tr><th>Cards in this chapter</th><td class="n">85</td></tr><tr><th>Definitions</th><td class="n">21</td></tr><tr><th>Theorems and results</th><td class="n">64</td></tr></table>
+<p><strong>Topics:</strong> adjoint, self-adjoint, normal operators, spectral theorem, positive operators, isometries, unitary operators, singular value decomposition (SVD), polar decomposition.</p>
+<h2>Why review this chapter with flashcards</h2><p>For many readers this is the high point of the course. The spectral theorems and the SVD each come in several versions with different hypotheses, and these cards keep the versions apart.</p>
+<h2>Three cards from this chapter</h2><p>Read the prompt, try to state the full answer with its hypotheses, then click to check.</p>
+<details class="card"><summary><span class="q"><strong>Definition.</strong> Self-adjoint.<br></span><span class="hint">Try to state it, then click to flip</span></summary>
+<div class="back"><strong>Definition.</strong> Let<ul>
+<li>$V$ be a nonzero finite-dimensional inner product space over $\mathbb F$.</li>
+<li>$T\in\mathcal L(V)$.</li>
+</ul>
+
+Then $T$ is <strong>self-adjoint</strong> if$$
+T=T^*.
+$$<div class="extra"><span class="lbl">Note</span>Equivalently, $\langle Tv,w\rangle=\langle v,Tw\rangle$ for all $v,w\in V$.<br></div></div></details>
+<details class="card"><summary><span class="q"><strong>Theorem.</strong> Complex spectral theorem.<br></span><span class="hint">Try to state it, then click to flip</span></summary>
+<div class="back"><strong>Theorem.</strong> Let<ul>
+<li>$V$ be a nonzero finite-dimensional complex inner product space.</li>
+<li>$T\in\mathcal L(V)$.</li>
+</ul>
+
+Then the following are equivalent.<br>
+1. $T$ is normal.<br>
+2. $\exists$ orthonormal basis $e_1,\ldots,e_n$ of $V$ such that $\mathcal M(T,(e_1,\ldots,e_n))$ is diagonal.<br>
+3. There is an orthonormal basis of $V$ consisting of eigenvectors of $T$.<br></div></details>
+<details class="card"><summary><span class="q"><strong>Theorem.</strong> Singular value decomposition.<br></span><span class="hint">Try to state it, then click to flip</span></summary>
+<div class="back"><strong>Theorem.</strong> Let<ul>
+<li>$V$ and $W$ be nonzero finite-dimensional inner product spaces over $\mathbb F$.</li>
+<li>$T\in\mathcal L(V,W)$.</li>
+<li>$m=\operatorname{rank}T$.</li>
+<li>$s_1,\ldots,s_m$ be the positive singular values of $T$, in nonincreasing order (empty if $m=0$).</li>
+</ul>
+
+Then there exist orthonormal lists $e_1,\ldots,e_m$ in $V$ and $f_1,\ldots,f_m$ in $W$ (empty if $m=0$) such that$$
+Tv=s_1\langle v,e_1\rangle f_1+\cdots+s_m\langle v,e_m\rangle f_m
+$$
+for every $v\in V$.<br><div class="extra"><span class="lbl">Note</span>The lists can be extended to orthonormal bases of $V$ and $W$, with respect to which $T$ has a diagonal matrix (in the rectangular sense).<br></div></div></details>
+<p class="free">Chapters 1–2 are free on AnkiWeb. This chapter is in the <a href="https://horizon0531.gumroad.com/l/vpxpkf/EARLYBIRD?utm_source=github-pages&utm_medium=landing&utm_campaign=site&utm_content=ch07">full deck</a> (US$12; the EARLYBIRD discount is applied through this link while it lasts).</p>
+<p><a class="btn" href="https://horizon0531.gumroad.com/l/vpxpkf/EARLYBIRD?utm_source=github-pages&utm_medium=landing&utm_campaign=site&utm_content=ch07">Get all 572 cards — US$12</a><a class="btn alt" href="https://ankiweb.net/shared/info/1172015345">Free sample (Ch. 1–2)</a></p>
+<div class="chapnav"><a href="inner-product-spaces.html">&larr; Chapter 6</a><a href="operators-on-complex-vector-spaces.html">Chapter 8 &rarr;</a></div></main><footer><p><strong>Not affiliated with or endorsed by Sheldon Axler or Springer.</strong> This is an independently written flashcard deck that follows the chapter order of <em>Linear Algebra Done Right</em>, 4th edition. It is meant to be used alongside the book, which is available free and legally from <a href="https://linear.axler.net/">the author's website</a>. All text on this site and on the cards is original.</p>
+<p>&copy; 2026 Anki 4 Math. Anki is a free, open-source flashcard program; this site is not affiliated with Anki or AnkiWeb.</p></footer></body></html>

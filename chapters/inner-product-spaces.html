@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linear Algebra Done Right Chapter 6: Inner Product Spaces — Anki Flashcards (57 cards)</title><meta name="description" content="57 Anki flashcards for Chapter 6 (Inner Product Spaces) of Linear Algebra Done Right, 4th edition: inner products, norms, Cauchy-Schwarz inequality, orthonormal bases, Gram-Schmidt, orthogonal complements, orthogonal projections, minimization. Independent study companion; sample cards inside.">
+<link rel="canonical" href="https://hsa00000.github.io/ladr-anki/chapters/inner-product-spaces.html">
+<meta property="og:title" content="Linear Algebra Done Right Chapter 6: Inner Product Spaces — Anki Flashcards (57 cards)"><meta property="og:description" content="57 Anki flashcards for Chapter 6 (Inner Product Spaces) of Linear Algebra Done Right, 4th edition: inner products, norms, Cauchy-Schwarz inequality, orthonormal bases, Gram-Schmidt, orthogonal complements, orthogonal projections, minimization. Independent study companion; sample cards inside."><meta property="og:type" content="website"><meta property="og:url" content="https://hsa00000.github.io/ladr-anki/chapters/inner-product-spaces.html">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+ onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header><a class="brand" href="../index.html">Anki 4 Math</a><nav><a href="../index.html#chapters">Chapters</a><a href="../index.html#faq">FAQ</a><a class="btn small" href="https://horizon0531.gumroad.com/l/vpxpkf/EARLYBIRD?utm_source=github-pages&utm_medium=landing&utm_campaign=site&utm_content=ch06">Get the full deck</a></nav></header><main><p class="price"><a href="../index.html">All chapters</a> / Chapter 6</p>
+<h1>Chapter 6: Inner Product Spaces — 57 flashcards</h1>
+<p class="lead">Chapter 6 adds geometry: inner products and norms, orthonormal bases and the Gram-Schmidt procedure, and orthogonal complements and projections, including minimization problems and the pseudoinverse.</p>
+<table><tr><th>Cards in this chapter</th><td class="n">57</td></tr><tr><th>Definitions</th><td class="n">11</td></tr><tr><th>Theorems and results</th><td class="n">46</td></tr></table>
+<p><strong>Topics:</strong> inner products, norms, Cauchy-Schwarz inequality, orthonormal bases, Gram-Schmidt, orthogonal complements, orthogonal projections, minimization.</p>
+<h2>Why review this chapter with flashcards</h2><p>Inequalities and identities such as Cauchy-Schwarz, the parallelogram equality, and polarization are easy to recognize but harder to state exactly. These cards ask you to state them.</p>
+<h2>Three cards from this chapter</h2><p>Read the prompt, try to state the full answer with its hypotheses, then click to check.</p>
+<details class="card"><summary><span class="q"><strong>Definition.</strong> Inner product.<br></span><span class="hint">Try to state it, then click to flip</span></summary>
+<div class="back"><strong>Definition.</strong> Let<ul>
+<li>$V$ be a vector space over $\mathbb F$, where $\mathbb F=\mathbb R$ or $\mathbb F=\mathbb C$.</li>
+<li>$\langle\cdot,\cdot\rangle:V\times V\to\mathbb F$ be a function.</li>
+</ul>
+
+Then $\langle\cdot,\cdot\rangle$ is an <strong>inner product on $V$</strong> if all of the following hold:<br>
+1. <strong>Positivity:</strong> $\langle v,v\rangle\ge 0$ for all $v\in V$.<br>
+2. <strong>Definiteness:</strong> $\langle v,v\rangle=0$ if and only if $v=0$.<br>
+3. <strong>Additivity in the first slot:</strong> $\langle u+v,w\rangle=\langle u,w\rangle+\langle v,w\rangle$ for all $u,v,w\in V$.<br>
+4. <strong>Homogeneity in the first slot:</strong> $\langle\lambda u,v\rangle=\lambda\langle u,v\rangle$ for all $\lambda\in\mathbb F$ and all $u,v\in V$.<br>
+5. <strong>Conjugate symmetry:</strong> $\langle u,v\rangle=\overline{\langle v,u\rangle}$ for all $u,v\in V$.<br><div class="extra"><span class="lbl">Note</span>When $\mathbb F=\mathbb C$, the notation $\lambda\ge 0$ means that $\lambda$ is real and nonnegative. If $\mathbb F=\mathbb R$, conjugate symmetry reduces to $\langle u,v\rangle=\langle v,u\rangle$ for all $u,v\in V$.<br></div></div></details>
+<details class="card"><summary><span class="q"><strong>Theorem.</strong> Cauchy-Schwarz inequality.<br></span><span class="hint">Try to state it, then click to flip</span></summary>
+<div class="back"><strong>Theorem.</strong> Let<ul>
+<li>$V$ be an inner product space over $\mathbb F$.</li>
+<li>$u,v\in V$.</li>
+</ul>
+
+Then$$
+|\langle u,v\rangle|\le\|u\|\|v\|.
+$$
+Equality holds if and only if the list $u,v$ is linearly dependent.<br></div></details>
+<details class="card"><summary><span class="q"><strong>Theorem-Definition.</strong> Gram-Schmidt procedure.<br></span><span class="hint">Try to state it, then click to flip</span></summary>
+<div class="back"><strong>Theorem-Definition.</strong> Let<ul>
+<li>$V$ be an inner product space over $\mathbb F$.</li>
+<li>$v_1,\ldots,v_m$ be a linearly independent list of vectors in $V$.</li>
+</ul>
+
+The <strong>Gram-Schmidt procedure</strong> produces a list $e_1,\ldots,e_m$ as follows.<ul>
+<li>If $m=0$, the output is the empty list.</li>
+<li>If $m\ge1$, set $f_1=v_1$ and, for $k=2,\ldots,m$,</li>
+$$
+f_k=v_k-\sum_{j=1}^{k-1}\frac{\langle v_k,f_j\rangle}{\|f_j\|^2}f_j,\qquad e_k=\frac{f_k}{\|f_k\|},
+$$
+</ul>
+and set $e_1=f_1/\|f_1\|$.<br>
+
+Then $e_1,\ldots,e_m$ is an orthonormal list and $\operatorname{span}(v_1,\ldots,v_k)=\operatorname{span}(e_1,\ldots,e_k)$ for $k=1,\ldots,m$.<br></div></details>
+<p class="free">Chapters 1–2 are free on AnkiWeb. This chapter is in the <a href="https://horizon0531.gumroad.com/l/vpxpkf/EARLYBIRD?utm_source=github-pages&utm_medium=landing&utm_campaign=site&utm_content=ch06">full deck</a> (US$12; the EARLYBIRD discount is applied through this link while it lasts).</p>
+<p><a class="btn" href="https://horizon0531.gumroad.com/l/vpxpkf/EARLYBIRD?utm_source=github-pages&utm_medium=landing&utm_campaign=site&utm_content=ch06">Get all 572 cards — US$12</a><a class="btn alt" href="https://ankiweb.net/shared/info/1172015345">Free sample (Ch. 1–2)</a></p>
+<div class="chapnav"><a href="eigenvalues-and-eigenvectors.html">&larr; Chapter 5</a><a href="operators-on-inner-product-spaces.html">Chapter 7 &rarr;</a></div></main><footer><p><strong>Not affiliated with or endorsed by Sheldon Axler or Springer.</strong> This is an independently written flashcard deck that follows the chapter order of <em>Linear Algebra Done Right</em>, 4th edition. It is meant to be used alongside the book, which is available free and legally from <a href="https://linear.axler.net/">the author's website</a>. All text on this site and on the cards is original.</p>
+<p>&copy; 2026 Anki 4 Math. Anki is a free, open-source flashcard program; this site is not affiliated with Anki or AnkiWeb.</p></footer></body></html>

@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linear Algebra Done Right Chapter 1: Vector Spaces — Anki Flashcards (39 cards)</title><meta name="description" content="39 Anki flashcards for Chapter 1 (Vector Spaces) of Linear Algebra Done Right, 4th edition: complex numbers, F^n, vector space axioms, subspaces, sums and direct sums. Independent study companion; sample cards inside.">
+<link rel="canonical" href="https://hsa00000.github.io/ladr-anki/chapters/vector-spaces.html">
+<meta property="og:title" content="Linear Algebra Done Right Chapter 1: Vector Spaces — Anki Flashcards (39 cards)"><meta property="og:description" content="39 Anki flashcards for Chapter 1 (Vector Spaces) of Linear Algebra Done Right, 4th edition: complex numbers, F^n, vector space axioms, subspaces, sums and direct sums. Independent study companion; sample cards inside."><meta property="og:type" content="website"><meta property="og:url" content="https://hsa00000.github.io/ladr-anki/chapters/vector-spaces.html">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+ onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header><a class="brand" href="../index.html">Anki 4 Math</a><nav><a href="../index.html#chapters">Chapters</a><a href="../index.html#faq">FAQ</a><a class="btn small" href="https://horizon0531.gumroad.com/l/vpxpkf/EARLYBIRD?utm_source=github-pages&utm_medium=landing&utm_campaign=site&utm_content=ch01">Get the full deck</a></nav></header><main><p class="price"><a href="../index.html">All chapters</a> / Chapter 1</p>
+<h1>Chapter 1: Vector Spaces — 39 flashcards</h1>
+<p class="lead">The opening chapter sets up the language the rest of the book depends on. Before abstract vector spaces appear, it reviews complex numbers and lists in F^n, then states the axioms, works through small consequences of them, and introduces subspaces together with sums and direct sums.</p>
+<table><tr><th>Cards in this chapter</th><td class="n">39</td></tr><tr><th>Definitions</th><td class="n">25</td></tr><tr><th>Theorems and results</th><td class="n">14</td></tr></table>
+<p><strong>Topics:</strong> complex numbers, F^n, vector space axioms, subspaces, sums and direct sums.</p>
+<h2>Why review this chapter with flashcards</h2><p>Most mistakes later in a proof-based course trace back to a half-remembered axiom or the exact condition for a direct sum. These cards make you state those conditions precisely.</p>
+<h2>Three cards from this chapter</h2><p>Read the prompt, try to state the full answer with its hypotheses, then click to check.</p>
+<details class="card"><summary><span class="q"><strong>Definition.</strong> Vector space.<br></span><span class="hint">Try to state it, then click to flip</span></summary>
+<div class="back"><strong>Definition.</strong> Let<ul>
+<li>$\mathbb F$ be a field, either $\mathbb R$ or $\mathbb C$.</li>
+<li>$V$ be a set.</li>
+<li>$+:V\times V\to V$ be a function.</li>
+<li>$\cdot:\mathbb F\times V\to V$ be a function.</li>
+</ul>
+
+Then $V$ is a <strong>vector space over $\mathbb F$</strong> if all of the following hold:<br>
+1. $\forall u,v\in V,\ u+v=v+u$.<br>
+2. $\forall u,v,w\in V,\ (u+v)+w=u+(v+w)$.<br>
+3. $\forall a,b\in\mathbb F,\ \forall v\in V,\ (ab)v=a(bv)$.<br>
+4. $\exists 0\in V,\ \forall v\in V,\ v+0=v$.<br>
+5. $\forall v\in V,\ \exists w\in V,\ v+w=0$.<br>
+6. $\forall v\in V,\ 1v=v$.<br>
+7. $\forall a\in\mathbb F,\ \forall u,v\in V,\ a(u+v)=au+av$.<br>
+8. $\forall a,b\in\mathbb F,\ \forall v\in V,\ (a+b)v=av+bv$.<br><div class="extra"><span class="lbl">Note</span>The function $+$ is called <strong>addition</strong>, and $\cdot$ is called <strong>scalar multiplication</strong>.<br></div></div></details>
+<details class="card"><summary><span class="q"><strong>Definition.</strong> Direct sum.<br></span><span class="hint">Try to state it, then click to flip</span></summary>
+<div class="back"><strong>Definition.</strong> Let<ul>
+<li>$V$ be a vector space over $\mathbb F$.</li>
+<li>$m$ be a positive integer.</li>
+<li>$V_1,\ldots,V_m$ be subspaces of $V$.</li>
+</ul>
+
+The sum $V_1+\cdots+V_m$ is a <strong>direct sum</strong> if$$
+\forall v\in V_1+\cdots+V_m,\quad \exists!\,(v_1,\ldots,v_m)\in V_1\times\cdots\times V_m:\ v=v_1+\cdots+v_m.
+$$
+In that case the sum is denoted$$
+V_1\oplus\cdots\oplus V_m.
+$$</div></details>
+<details class="card"><summary><span class="q"><strong>Theorem.</strong> Condition for a direct sum.<br></span><span class="hint">Try to state it, then click to flip</span></summary>
+<div class="back"><strong>Theorem.</strong> Let<ul>
+<li>$V$ be a vector space over $\mathbb F$.</li>
+<li>$m$ be a positive integer.</li>
+<li>$V_1,\ldots,V_m$ be subspaces of $V$.</li>
+</ul>
+
+Then $V_1+\cdots+V_m$ is a direct sum if and only if$$
+\forall (v_1,\ldots,v_m)\in V_1\times\cdots\times V_m,\quad v_1+\cdots+v_m=0\Longrightarrow v_1=\cdots=v_m=0.
+$$</div></details>
+<p class="free">This chapter is included in the <strong>free AnkiWeb sample</strong> (chapters 1–2, 75 cards). <a href="https://ankiweb.net/shared/info/1172015345">Download the sample from AnkiWeb</a>.</p>
+<p><a class="btn" href="https://horizon0531.gumroad.com/l/vpxpkf/EARLYBIRD?utm_source=github-pages&utm_medium=landing&utm_campaign=site&utm_content=ch01">Get all 572 cards — US$12</a><a class="btn alt" href="https://ankiweb.net/shared/info/1172015345">Free sample (Ch. 1–2)</a></p>
+<div class="chapnav"><span></span><a href="finite-dimensional-vector-spaces.html">Chapter 2 &rarr;</a></div></main><footer><p><strong>Not affiliated with or endorsed by Sheldon Axler or Springer.</strong> This is an independently written flashcard deck that follows the chapter order of <em>Linear Algebra Done Right</em>, 4th edition. It is meant to be used alongside the book, which is available free and legally from <a href="https://linear.axler.net/">the author's website</a>. All text on this site and on the cards is original.</p>
+<p>&copy; 2026 Anki 4 Math. Anki is a free, open-source flashcard program; this site is not affiliated with Anki or AnkiWeb.</p></footer></body></html>
